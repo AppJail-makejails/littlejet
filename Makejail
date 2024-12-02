@@ -11,7 +11,7 @@ FROM --entrypoint gh+AppJail-makejails/littlejet littlejet:${littlejet_tag}
 RAW if [ -n "${littlejet_ssh_key}" ]; then
 	COPY "${littlejet_ssh_conf}" /etc/ssh/sshd_config
 	CMD chown root:wheel /etc/ssh/sshd_config
-	CMD echo "${littlejet_ssh_key}" >> /etc/ssh/authorized_keys
+	CMD echo "${littlejet_ssh_key}" > /etc/ssh/authorized_keys
 	SYSRC sshd_enable=YES
 	SERVICE sshd start
 RAW fi
