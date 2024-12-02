@@ -1,0 +1,16 @@
+tags: 13.4
+13.4.arch: amd64
+13.4.name: "littlejet"
+13.4.timestamp.amd64: 1733110385
+13.4.sum.amd64: 0ec8cbb1c2dad5a8aa13e139fa2a5395593beedf3efd711ef21d94ec4f6bf867
+13.4.size.amd64: 134422481
+13.4.source.amd64: "http://appjail.hpc.at/littlejet/13.4-amd64-image.appjail"
+13.4.source.amd64+: "https://images.all101bsd.download/littlejet/13.4-amd64-image.appjail"
+tags+: 14.1
+14.1.arch: amd64
+14.1.name: "littlejet"
+14.1.timestamp.amd64: 1733110890
+14.1.sum.amd64: b05176d632374d259fe7c7f76a68708238c489d085a930b98cf9492c82407e50
+14.1.size.amd64: 133861780
+14.1.source.amd64: "http://appjail.hpc.at/littlejet/14.1-amd64-image.appjail"
+14.1.source.amd64+: "https://images.all101bsd.download/littlejet/14.1-amd64-image.appjail"
