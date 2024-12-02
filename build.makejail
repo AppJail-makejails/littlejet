@@ -11,4 +11,8 @@ CMD mkdir -p /user
 CMD touch /user/.hushlogin
 CMD chown -R littlejet:littlejet /user
 
+CMD pw useradd -n upload -c "Upload files" -d /upload -s /bin/sh
+CMD mkdir -p /upload
+CMD chown upload:upload /upload
+
 COPY files/littlejet-ssh /usr/local/bin/littlejet-ssh

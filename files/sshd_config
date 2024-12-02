@@ -30,3 +30,7 @@ Subsystem sftp none
 Match User littlejet
     ForceCommand /usr/local/bin/littlejet-ssh
     AuthorizedKeysFile authorized_keys
+
+Match User upload
+    Subsystem sftp internal-sftp
+    ChrootDirectory /upload

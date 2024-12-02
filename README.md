@@ -14,6 +14,7 @@ appjail makejail \
     -f gh+AppJail-makejails/littlejet \
     -o virtualnet=":<random> default" \
     -o nat \
+    -o expose="2022:22" \
         -- \
         --littlejet_ssh_key "ssh-ed25519 ..."
 ```
@@ -22,10 +23,22 @@ If you use SSH, you should have in your `ssh_config(5)` file:
 
 ```
 Host control-jet
-        HostName <ip-or-hostname>
-        User littlejet
-        LogLevel ERROR
-        RequestTTY yes
+    HostName <ip-or-hostname>
+    User littlejet
+    Port 2022
+    LogLevel ERROR
+    RequestTTY yes
+
+Host upload-jet
+    HostName <ip-or-hostname>
+    Port 2022
+    User upload
+```
+
+```console
+$ ssh control-jet version
+...
+$ sftp upload-jet
 ```
 
 ### Deploy using appjail-director
