@@ -1,0 +1,14 @@
+INCLUDE options/options.makejail
+INCLUDE options/volumes.makejail
+
+PKG python git-tiny jq cpdup sansi terminfo-db
+
+CMD git clone --depth 1 https://github.com/DtxdF/LittleJet.git /tmp/littlejet
+CMD (cd /tmp/littlejet; env SUEXEC=command ./make.sh)
+
+CMD pw useradd -n littlejet -c "Create, deploy, manage and scale FreeBSD jails anywhere" -d /user -s /bin/sh
+CMD mkdir -p /user
+CMD touch /user/.hushlogin
+CMD chown -R littlejet:littlejet /user
+
+COPY files/littlejet-ssh /usr/local/bin/littlejet-ssh

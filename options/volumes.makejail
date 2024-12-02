@@ -1,0 +1,2 @@
+OPTION volume=littlejet-conf mountpoint:/user/.config/littlejet owner:1001 group:1001
+OPTION volume=littlejet-data mountpoint:/user/.littlejet owner:1001 group:1001
