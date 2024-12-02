@@ -1,2 +1,3 @@
 OPTION volume=littlejet-conf mountpoint:/user/.config/littlejet owner:1001 group:1001
 OPTION volume=littlejet-data mountpoint:/user/.littlejet owner:1001 group:1001
+OPTION volume=littlejet-ssh mountpoint:/etc/ssh owner:0 group:0 perm:755
