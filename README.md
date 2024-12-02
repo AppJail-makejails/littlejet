@@ -35,6 +35,8 @@ Host upload-jet
     User upload
 ```
 
+Where `control-jet` should be used with `ssh(1)` and `upload-jet` with `sftp(1)`. The former is for controlling LittleJet and the latter for uploading files, but the intention is to upload [Director](https://github.com/DtxdF/director) projects.
+
 ```console
 $ ssh control-jet version
 ...
