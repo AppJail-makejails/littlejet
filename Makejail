@@ -9,6 +9,9 @@ FROM --entrypoint gh+AppJail-makejails/littlejet littlejet:${littlejet_tag}
 # SSH
 
 RAW if [ -n "${littlejet_ssh_key}" ]; then
+	CMD chown root:wheel /upload
+	CMD mkdir -p /upload/projects
+	CMD chown upload:upload /upload/projects
 	COPY "${littlejet_ssh_conf}" /etc/ssh/sshd_config
 	CMD chown root:wheel /etc/ssh/sshd_config
 	CMD echo "${littlejet_ssh_key}" > /etc/ssh/authorized_keys
