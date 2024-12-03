@@ -40,7 +40,8 @@ Where `control-jet` should be used with `ssh(1)` and `upload-jet` with `sftp(1)`
 ```console
 $ ssh control-jet version
 ...
-$ sftp upload-jet
+$ sftp upload-jet:/projects
+...
 ```
 
 ### Deploy using appjail-director
