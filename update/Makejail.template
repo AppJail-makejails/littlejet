@@ -3,7 +3,7 @@ INCLUDE options/options.makejail
 ARG littlejet_ssh_conf=files/sshd_config
 ARG littlejet_ssh_key?
 ARG littlejet_ajspec=gh+AppJail-makejails/littlejet
-ARG littlejet_tag=13.4
+ARG littlejet_tag=%%TAG1%%
 
 FROM --entrypoint "${littlejet_ajspec}" littlejet:${littlejet_tag}
 
