@@ -1,16 +1,17 @@
 tags+: 13.5
 13.5.arch: amd64
 13.5.name: "littlejet"
-13.5.timestamp.amd64: 1742087716
-13.5.sum.amd64: 90d7e04be26045101d3de13110dff1660ad2cec376d41f50ada66518b15014f0
-13.5.size.amd64: 135156726
+13.5.timestamp.amd64: 1742272380
+13.5.sum.amd64: 5d090ff09937081d049ed152cff15638244d18556e1f1884dbcb99339aebe9f2
+13.5.size.amd64: 135154949
 13.5.source.amd64: "http://appjail.hpc.at/littlejet/13.5-amd64-image.appjail"
 13.5.source.amd64+: "https://images.all101bsd.download/littlejet/13.5-amd64-image.appjail"
 tags+: 14.2
 14.2.arch: amd64
 14.2.name: "littlejet"
-14.2.timestamp.amd64: 1742088193
-14.2.sum.amd64: fbe1708b3910fdab4256bf71c43a8728e25e1e12673598e3fbb3ac0eabc6fd98
-14.2.size.amd64: 134601805
+14.2.timestamp.amd64: 1742272794
+14.2.sum.amd64: dcf5ad5b4a02a393d4843851ddea46b5454562c4db24dce2643aad80cba0bb71
+14.2.size.amd64: 134657696
 14.2.source.amd64: "http://appjail.hpc.at/littlejet/14.2-amd64-image.appjail"
 14.2.source.amd64+: "https://images.all101bsd.download/littlejet/14.2-amd64-image.appjail"
+maintenance: "This image is uploading, please wait a moment and try again. If you are importing this image using a Makejail that has the '--<name>_ajspec' argument, you can use the 'reproduce' method to use 'appjail-reproduce'. See 'appjail-image(5)' for details."
