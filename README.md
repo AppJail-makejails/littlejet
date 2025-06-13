@@ -89,7 +89,7 @@ volumes:
 
 ```
 DIRECTOR_PROJECT=orchestrator
-TAG=14.2
+TAG=14.3
 PORT=2022
 SSH_KEY=ssh-ed25519 ...
 ```
@@ -122,4 +122,4 @@ chown -Rf 1001:1001 .volumes/ssh/cli
 | Tag    | Arch    | Version        | Type   |
 | ------ | ------- | -------------- | ------ |
 | `13.5` | `amd64` | `13.5-RELEASE` | `thin` |
-| `14.2` | `amd64` | `14.2-RELEASE` | `thin` |
+| `14.3` | `amd64` | `14.3-RELEASE` | `thin` |
