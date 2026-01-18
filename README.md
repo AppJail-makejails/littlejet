@@ -89,7 +89,7 @@ volumes:
 
 ```
 DIRECTOR_PROJECT=orchestrator
-TAG=14.3
+TAG=15
 PORT=2022
 SSH_KEY=ssh-ed25519 ...
 ```
@@ -107,7 +107,7 @@ chown -Rf 1001:1001 .volumes/ssh/cli
 * `littlejet_ssh_conf` (default: `files/sshd_config`): `sshd_config(5)` configuration file.
 * `littlejet_ssh_key`: (optional): If this argument is set, the SSH server is started and configured to use LittleJet remotely. This argument is the authorized key.
 * `littlejet_ajspec` (default: `gh+AppJail-makejails/littlejet`): Entry point where the `appjail-ajspec(5)` file is located.
-* `littlejet_tag` (default: `13.5`): See [#tags](#tags).
+* `littlejet_tag` (default: `14.3`): See [#tags](#tags).
 
 ### Volumes
 
@@ -121,5 +121,5 @@ chown -Rf 1001:1001 .volumes/ssh/cli
 
 | Tag    | Arch    | Version        | Type   |
 | ------ | ------- | -------------- | ------ |
-| `13.5` | `amd64` | `13.5-RELEASE` | `thin` |
 | `14.3` | `amd64` | `14.3-RELEASE` | `thin` |
+| `15` | `amd64` | `15` | `thin` |
